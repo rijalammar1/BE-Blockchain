@@ -15,9 +15,9 @@ const router = express.Router()
 
 router.use(validateTokenGeneral)
 
-router.get("/deploy/transaction", deployTransactionContract)
-router.get("/deploy/transaction-detail", deployTransactionDetailContract)
-router.get("/deploy/token", deployTokenContract)
+// router.get("/deploy/transaction", deployTransactionContract)
+// router.get("/deploy/transaction-detail", deployTransactionDetailContract)
+// router.get("/deploy/token", deployTokenContract)
 router.get("/blocks", getAllBlocks)
 router.get("/block/:blockNumber", getBlockByNumber)
 router.get("/block/transaction/:transactionHash", getBlockFromTransactionHash)
